@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "101cb1cd-5fa3-4427-ba13-10909bcf3b93",
+		"name": "delay_report",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29184398"
+	},
+	"item": [
+		{
+			"name": "Report Delay",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/app/delay?order_id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"delay"
+					],
+					"query": [
+						{
+							"key": "order_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign to Agent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/app/assign?agent_id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"assign"
+					],
+					"query": [
+						{
+							"key": "agent_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/app/report",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"report"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
