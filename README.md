@@ -2,6 +2,11 @@
 
 ### Start project
 
+set environment variables
+```
+cp .env.sample .env
+```
+
 project starts with docker-compose command, app will be available at: http://127.0.0.1:8000
 ``` 
 docker-compose up -d --build
